@@ -1,0 +1,208 @@
+
+.container-form {
+    width: 80%;
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: #F1F4F5;
+  }
+
+  .container-form * {
+    box-sizing: border-box;
+  }
+
+  .flex-outer,
+  .flex-inner {
+    list-style-type: none;
+    padding: 0;
+  }
+
+  .flex-outer {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #F1F4F5;
+    padding: 20px;
+  }
+
+  .flex-outer li,
+  .flex-inner {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+
+  .flex-inner {
+    padding: 0 8px;
+    justify-content: space-between;
+  }
+
+  .flex-outer > li:not(:last-child) {
+    margin-bottom: 20px;
+  }
+
+  .flex-outer li label,
+  .flex-outer li p {
+    padding: 8px;
+    font-weight: 500;
+    letter-spacing: .09em;
+    text-transform: uppercase;
+    font-family: 'Poppins';
+  }
+
+  .flex-outer > li > label,
+  .flex-outer li p {
+    flex: 1 0 120px;
+    max-width: 220px;
+  }
+
+  .flex-outer > li > label + *,
+  .flex-inner {
+    flex: 1 0 220px;
+    flex-wrap: wrap
+  }
+
+  .flex-outer li p {
+    margin: 0;
+  }
+
+  .flex-outer li input:not([type='checkbox']),
+  .flex-outer li textarea {
+    padding: 15px;
+    border: none;
+  }
+
+  .flex-outer li button {
+    margin-left: auto;
+    padding: 8px 16px;
+    border: none;
+    background: #333;
+    color: #f2f2f2;
+    text-transform: uppercase;
+    letter-spacing: .09em;
+    border-radius: 2px;
+  }
+
+  .flex-inner li {
+   min-width:  100px;
+  }
+
+li select {
+    border: 1px solid #D9DEE2;
+    font-family: 'Poppins', sans-serif;
+    border-radius: 0px;
+    height: 40px;
+    display: block;
+    width: 100%;
+    padding: 0px 0px 0px 15px;
+    color: #323a45;
+    background: #fff url(https://www.indianic.com///wp-content/uploads/2017/07/drop-down-arrow.png) no-repeat right 15px center;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+    font-size: 14px;
+    box-sizing: border-box;
+  }
+
+  textarea {
+    resize: none;
+}
+
+
+
+/*  da premestq v about */
+
+
+.image-effect .image-wrap{ width: 370px; height: 370px; border-radius: 50%; position: relative; box-shadow: 0 0 0 30px rgba(244,244,244,1); margin:0 auto; margin-top:100px}
+.image-effect .image-wrap::after, .image-effect .image-wrap::before {position: absolute;content: '';width: 370px;height: 370px;top: 0;left: 0;border-radius: 50%;z-index: 0;}
+.image-effect .image-wrap::after { box-shadow: 0 0 0 140px rgba(244,244,244,1); -webkit-animation: 2.5s anim-effect-back 0s linear infinite; 	animation: 2.5s anim-effect-back 0s linear infinite; }
+.image-effect .image-wrap img{ display: inline-block; border-radius: 50%;}
+@-webkit-keyframes anim-effect-back {
+	0% {
+		box-shadow: 0 0 0 30px rgba(244,244,244,1);
+		opacity: 1;
+		-webkit-transform: scale3d(1, 1, 1.5);
+		transform: scale3d(1, 1, 1.5);
+	}
+	50% {
+		box-shadow: 0 0 0 70px rgba(244,244,244,0.6);
+		opacity: 1;
+		-webkit-transform: scale3d(1, 1, 1.5);
+		transform: scale3d(1, 1, 1.5);
+	}
+	100% {
+		box-shadow: 0 0 0 140px rgba(244,244,244,0);
+		opacity: 0;
+		-webkit-transform: scale3d(1, 1, 1.5);
+		transform: scale3d(1, 1, 1.5);
+	}
+}
+
+@keyframes anim-effect-back {
+	0% {
+		box-shadow: 0 0 0 30px rgba(244,244,244,1);
+		opacity: 1;
+		-webkit-transform: scale3d(1, 1, 1.5);
+		transform: scale3d(1, 1, 1.5);
+	}
+	50% {
+		box-shadow: 0 0 0 70px rgba(244,244,244,0.6);
+		opacity: 1;
+		-webkit-transform: scale3d(1, 1, 1.5);
+		transform: scale3d(1, 1, 1.5);
+	}
+	100% {
+		box-shadow: 0 0 0 140px rgba(244,244,244,0);
+		opacity: 0;
+		-webkit-transform: scale3d(1, 1, 1.5);
+		transform: scale3d(1, 1, 1.5);
+	}
+}
+
+.play::before, .image-wrap::before{
+	box-shadow: 0 0 0 80px rgba(232,232,232,1);
+}
+
+.play::before, .image-wrap::before {
+	-webkit-animation: 2.5s anim-effect-front 0s linear infinite;
+	animation: 2.5s anim-effect-front 0s linear infinite;
+}
+
+@-webkit-keyframes anim-effect-front {
+	0% {
+		box-shadow: 0 0 0 20px rgba(232,232,232,1);
+		opacity: 1;
+		-webkit-transform: scale3d(1, 1, 0.5);
+		transform: scale3d(1, 1, 0.5);
+	}
+	50% {
+		box-shadow: 0 0 0 40px rgba(232,232,232,0.6);
+		opacity: 1;
+		-webkit-transform: scale3d(1, 1, 0.5);
+		transform: scale3d(1, 1, 0.5);
+	}
+	100% {
+		box-shadow: 0 0 0 80px rgba(232,232,232,0);
+		opacity: 0;
+		-webkit-transform: scale3d(1, 1, 0.5);
+		transform: scale3d(1, 1, 0.5);
+	}
+}
+@keyframes anim-effect-front {
+	0% {
+		box-shadow: 0 0 0 20px rgba(232,232,232,1);
+		opacity: 1;
+		-webkit-transform: scale3d(1, 1, 0.5);
+		transform: scale3d(1, 1, 0.5);
+	}
+	50% {
+		box-shadow: 0 0 0 40px rgba(232,232,232,0.6);
+		opacity: 1;
+		-webkit-transform: scale3d(1, 1, 0.5);
+		transform: scale3d(1, 1, 0.5);
+	}
+	100% {
+		box-shadow: 0 0 0 80px rgba(232,232,232,0);
+		opacity: 0;
+		-webkit-transform: scale3d(1, 1, 0.5);
+		transform: scale3d(1, 1, 0.5);
+	}
+}

@@ -1,0 +1,313 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:300,400,500,600');
+@import url('https://fonts.googleapis.com/css?family=Ubuntu+Condensed');
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+strong {
+  font-weight: 700;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+body {
+  color: #252b33;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  line-height: 1.6em;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+h1 {
+  font-size: 3em;
+  padding: 3em 0 1em 0;
+}
+
+.inner-wrapper {
+  max-width: 1024px;
+  margin: 0 auto;
+}
+.navBar {
+  background-color: white;
+  position: fixed;
+  min-width: 100%;
+  box-shadow: 0px 1px 3px rgba(0,0,0,0.05) !important;
+  z-index: 1;
+}
+.logo {
+  background-color: #e84545;
+  border-radius: 50px;
+  display: inline-block;
+  height: 36px;
+  margin: 0.7em 0;
+  width: 36px;
+}
+.wrapper {
+  margin: 0 auto;
+  max-width: 960px;
+  padding: 0 2%;
+}
+nav ul {
+  display: flex;
+  justify-content: space-between;
+  list-style-type: none;
+  width: 50%;
+}
+nav ul a {
+  color: #252b33;
+  text-decoration: none;
+  transition: all 0.5s ease;
+  font-weight: 600;
+  text-transform: none;
+  padding: 0 0 20px;
+    font-weight: 600;
+    transition: all .3s ease-in-out;
+    position: relative;
+}
+nav ul a:hover:after {
+  color: #00BCD4;
+  width: 100%;
+}
+nav ul a:hover{
+  color: #00BCD4;
+
+}
+nav ul a:after {
+  position: absolute;
+  content: "";
+  height: 3px;
+  width: 0;
+  left: 50%;
+  right: 0;
+  bottom: 0px;
+  background-color: transparent;
+  color: #00BCD4;
+  border-bottom: 3px solid #00BCD4;
+  transition: all .3s ease-in-out;
+  transform: translate(-50%,0) translateZ(0);
+  -webkit-transform: translate(-50%,0) translateZ(0);
+  display:block;
+  }
+nav li {
+  display: inline-block;
+}
+nav #menu-toggle {
+  display: none;
+}
+nav .label-toggle {
+  display: none;
+}
+nav .wrapper {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+}
+
+@media (min-width: 768px) {
+  .wrapper {
+    min-width: 920px;
+    max-width: 1920px;
+    width: 90%;
+
+  }
+}
+@media screen and (max-width: 768px) {
+  nav nav ul a {
+    color: white;
+  }
+  .navBar {
+    background-color: #53354A;
+  }
+  .menu-free-estimate {
+    display: none;
+  }
+  nav ul {
+    background-color: #E84545;
+    display: block;
+    height: 0;
+    list-style-type: none;
+    opacity: 0;
+    text-align: center;
+    transition: all 1s ease;
+    width: 100%;
+    visibility: hidden;
+  }
+  nav li {
+    border-bottom: 2px solid #53354a;
+    color: #53354a;
+    display: block;
+    font-size: 1.5em;
+    padding: 2em 0;
+  }
+  nav #menu-toggle:checked ~ ul {
+    opacity: 1;
+    height: 100vh;
+    visibility: visible;
+    box-sizing: border-box;
+    padding:
+  }
+  nav .label-toggle {
+    background: linear-gradient(to bottom, #e84545 0%, #e84545 20%, transparent 20%, transparent 40%, #e84545 40%, #e84545 60%, transparent 60%, transparent 80%, #e84545 80%, #e84545 100%);
+    cursor: pointer;
+    display: block;
+    float: right;
+    height: 35px;
+    margin-top: 1em;
+    width: 35px;
+  }
+  nav .wrapper {
+    display: block;
+  }
+}
+
+.menu-free-estimate a.free-estimate-btn:hover {
+  background: #fee95e;
+}
+
+.menu-free-estimate a.free-estimate-btn {
+  background: #f7e14b;
+  padding: 6px 20px;
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.menu-free-estimate a.free-estimate-btn span {
+  color: #252b33;
+  font-size: 12px;
+}
+
+.menu-free-estimate a.free-estimate-btn p {
+  color: #252b33;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 4px;
+  padding-top: 16px;
+  margin: 0px;
+  letter-spacing: -0.3px;
+  text-transform: none;
+}
+
+::selection {
+  background: #00BCD4; /* WebKit/Blink Browsers */
+  color: white;
+}
+::-moz-selection {
+  background: #00BCD4; /* Gecko Browsers */
+  color: white;
+}
+
+.center {
+  text-align: center;
+}
+
+.self-center {
+  align-self: center;
+}
+
+/* Image */
+/* img {
+  max-width: 100%;
+  height: auto;
+} */
+
+.height-100vh {
+
+  display: flex;            /* establish flex container */
+  flex-direction: column;   /* stack flex items vertically */
+  position: relative;       /* establish neares positioned ancenstor for absolute positioning */
+}
+
+.title-text {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  color: #252b33;
+  font-size: 55px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: -1px;
+  width: 79%;
+  font-family: 'Ubuntu Condensed', sans-serif;
+  width: 60%;
+  margin: 0 auto;
+  line-height: 60px;
+  text-align: center;
+}
+
+.center-aligned {
+ display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Grid */
+.flex-grid {
+  display: flex;
+  justify-content: center;
+}
+.col {
+  flex: 1;
+}
+
+@media (max-width: 400px) {
+  .flex-grid {
+    display: block;
+  }
+}
+
+.flex-grid-thirds {
+  display: flex;
+  justify-content: space-between;
+}
+.flex-grid-thirds .col {
+  width: 32%;
+}

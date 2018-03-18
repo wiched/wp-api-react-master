@@ -1,0 +1,7 @@
+{
+    "plugins": ["react-hot-loader/babel"],
+    "ignore": [
+      "foo.js",
+      "bar/**/*.js"
+    ]
+  }

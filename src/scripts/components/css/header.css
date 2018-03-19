@@ -186,7 +186,6 @@ nav .wrapper {
     height: 100vh;
     visibility: visible;
     box-sizing: border-box;
-    padding:
   }
   nav .label-toggle {
     background: linear-gradient(to bottom, #e84545 0%, #e84545 20%, transparent 20%, transparent 40%, #e84545 40%, #e84545 60%, transparent 60%, transparent 80%, #e84545 80%, #e84545 100%);

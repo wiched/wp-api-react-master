@@ -5,9 +5,10 @@ import Home                 from 'components/Home.js';
 import About                from 'components/About.js';
 import Contact              from 'components/Contact.js';
 import Header               from 'components/Header.js';
-import Projects            from 'components/Projects.js';
-import WhatWeDo            from 'components/WhatWeDo.js';
-import WeWorkWith            from 'components/WeWorkWith.js';
+import Projects             from 'components/Projects.js';
+import WhatWeDo             from 'components/WhatWeDo.js';
+import WeWorkWith           from 'components/WeWorkWith.js';
+import NotFound             from 'components/NotFound.js';
 
 import {
     BrowserRouter as Router,
@@ -25,6 +26,7 @@ class AppInitializer {
         'projects': Projects,
         'what-we-do': WhatWeDo,
         'we-work-with': WeWorkWith,
+        '404': NotFound,
     }
 
     buildRoutes(data){
@@ -51,7 +53,8 @@ class AppInitializer {
                             <Route path="/" component={ Home } exact />
 
                             {this.buildRoutes(response)}
-                            <Route render={() => { return <Redirect to="/" /> }} />
+                            <Route path="/404" component={ NotFound } exact />
+                            <Route render={() => { return <Redirect to="/404" /> }} />
                         </Switch>
                     </div>
                 </Router>

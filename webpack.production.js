@@ -29,11 +29,18 @@ module.exports = {
 		// Loaders are kind of like “tasks” in other build tools, and provide a powerful way to handle frontend build steps.
 		loaders: [
 			{
+				test: /\.css$/,
+				use: [
+				  'style-loader',
+				  'css-loader',
+				]
+			 },
+			{
 				test: /\.jsx?$/, // Here we're going to use JS for react components but including JSX in case this extension is preferable
 				include: [
 					path.resolve(__dirname, "src"),
 				],
-				loader: ['react-hot-loader']
+
 			},
 			{
 				loader: "babel-loader",

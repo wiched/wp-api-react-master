@@ -1,4 +1,3 @@
-# wp-api-react-master
 # Wordpress REST API + React JS 16
 
 This boilerplate will help you use React JS with Wordpress REST API.
@@ -33,6 +32,6 @@ Don't forget to update the Worpress installation url in DataActions.js. It's loc
 ```
 class DataActions {
 	constructor() {
-		const appUrl = 'http://andreypokrovskiy.com/projects/wp-api'; // Wordpress installation url
+		const appUrl = 'http://jordanov.info/zone/wp-api'; // Wordpress installation url
 	}
 ```

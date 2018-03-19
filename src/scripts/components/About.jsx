@@ -32,7 +32,7 @@ class About extends React.Component {
           </div>
         </div>
 
-        <div className="flex-grid inner-wrapper ">
+        <div className="flex-grid inner-wrapper">
           <div className="col ">
             <div className="image-effect">
               <div className="image-wrap">
@@ -50,7 +50,7 @@ class About extends React.Component {
               the shoulder and the look they give each other when they offer
               their support to each other.
             </p>
-            <br/>
+            <br />
             <p>
               It’s the takeaway during the break that brings them together, and
               their smile when they are asked how many hours they slept the
@@ -58,11 +58,35 @@ class About extends React.Component {
               buried deep inside and put aside every morning when they come
               back.
             </p>
-            <br/>
+            <br />
             <p>
               It’s the mentors that inspire them every day by sharing their
               experience, and the look of pride on everyone’s face when they
               accomplish things together.
+            </p>
+          </div>
+        </div>
+
+        <div className="flex-grid inner-wrapper">
+          <div className="col ">
+            <h1>What do we want to be remembered for?</h1>
+          </div>
+          <div className="col self-center">
+            <p>
+              We came such a long way and so much has happened in the past
+              eighteen years. We built things; we met so many people, created
+              life long friendships, learned so much and grew as a whole.
+              Looking back, it was a bumpy ride, and sometimes the days and
+              months seemed endless and hopeless, but what beautiful destination
+              isn’t worth the struggle of the journey. And what a journey it
+              was.
+            </p>
+            <br />
+            <p>
+              Our definition of success changed a long time ago. Making a
+              difference in a few lives is a worthy goal, but helping people to
+              achieve the things they want to achieve is really what we want to
+              be remembered for.
             </p>
           </div>
         </div>

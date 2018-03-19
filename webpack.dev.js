@@ -8,6 +8,7 @@ module.exports = {
 		historyApiFallback: true, // This will make the server understand "/some-link" routs instead of "/#/some-link"
 	},
 	entry: [
+		'react-hot-loader/patch',
 		'babel-polyfill',
 		'webpack-dev-server/client?http://127.0.0.1:8080/', // Specify the local server port
 		'webpack/hot/only-dev-server', // Enable hot reloading

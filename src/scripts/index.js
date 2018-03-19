@@ -1,14 +1,14 @@
 import {render}             from 'react-dom';
 import DataActions          from 'flux/actions/DataActions.js';
 
-import Home                 from 'components/Home.js';
-import About                from 'components/About.js';
-import Contact              from 'components/Contact.js';
-import Header               from 'components/Header.js';
-import Projects             from 'components/Projects.js';
-import WhatWeDo             from 'components/WhatWeDo.js';
-import WeWorkWith           from 'components/WeWorkWith.js';
-import NotFound             from 'components/NotFound.js';
+import Home                 from 'components/Home';
+import About                from 'components/About';
+import Contact              from 'components/Contact';
+import Header               from 'components/Header';
+import Projects             from 'components/Projects';
+import WhatWeDo             from 'components/WhatWeDo';
+import WeWorkWith           from 'components/WeWorkWith';
+import NotFound             from 'components/NotFound';
 
 import {
     BrowserRouter as Router,

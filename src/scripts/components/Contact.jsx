@@ -13,7 +13,7 @@ class Contact extends React.Component {
         </section>
         <div className="flex-grid">
           <div className="col center">
-          <h2>Estimate your project</h2>
+          <h2>Estimate your projecs</h2>
           <h4>Describe your business idea
           and let us do the rest</h4>
             <img

@@ -111,7 +111,7 @@ li select {
 /*  da premestq v about */
 
 
-.image-effect .image-wrap{ width: 370px; height: 370px; border-radius: 50%; position: relative; box-shadow: 0 0 0 30px rgba(244,244,244,1); margin:0 auto; margin-top:100px}
+.image-effect .image-wrap{ width: 370px; height: 370px; border-radius: 50%; position: relative; box-shadow: 0 0 0 30px rgba(244,244,244,1); margin:0 auto; }
 .image-effect .image-wrap::after, .image-effect .image-wrap::before {position: absolute;content: '';width: 370px;height: 370px;top: 0;left: 0;border-radius: 50%;z-index: 0;}
 .image-effect .image-wrap::after { box-shadow: 0 0 0 140px rgba(244,244,244,1); -webkit-animation: 2.5s anim-effect-back 0s linear infinite; 	animation: 2.5s anim-effect-back 0s linear infinite; }
 .image-effect .image-wrap img{ display: inline-block; border-radius: 50%;}

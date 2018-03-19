@@ -292,6 +292,12 @@ nav .wrapper {
 .flex-grid {
   display: flex;
   justify-content: center;
+  margin-bottom: 200px;
+}
+
+.flex-grid h1 {
+  line-height: 1;
+  font-size: 2.4em;
 }
 .col {
   flex: 1;

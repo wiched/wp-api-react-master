@@ -1,0 +1,254 @@
+.container {
+    width: 100%;
+    max-width: 1024px;
+    padding-top: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+    margin-top: auto;
+    margin-right: auto;
+    margin-bottom: auto;
+    margin-left: auto;
+  }
+  #services > .container {
+    max-width: 100%;
+    padding-top: 0px;
+    padding-right: 0px;
+    padding-bottom: 0px;
+    padding-left: 0px;
+  }
+  .services-boxes::after {
+    clear: both;
+    display: block;
+    content: "";
+  }
+  .lg-service-box {
+    float: left;
+    width: 33.33%;
+    padding-bottom: 25%;
+    background-image: url("https://webnotize.com/images/services/web.jpg");
+    background-position-x: center;
+    background-position-y: center;
+    background-repeat-x: no-repeat;
+    background-repeat-y: no-repeat;
+    background-size: cover;
+    color: rgb(255, 255, 255);
+    position: relative;
+    overflow-x: hidden;
+    overflow-y: hidden;
+  }
+  .lg-service-box::after {
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    top: 0px;
+    content: "";
+    background-color: rgb(0, 0, 0);
+    opacity: 0.75;
+    transition-duration: 0.25s, 0.25s;
+
+    transition-property: background, opacity;
+  }
+  .services-boxes .lg-service-box:hover::after {
+    background-color:#00BCD4;
+    opacity: 0.9;
+  }
+  .lg-service-box a {
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    top: 0px;
+    bottom: 0px;
+    z-index: 5;
+    color: rgb(255, 255, 255);
+  }
+
+  .lg-service-box-inner {
+    position: absolute;
+    z-index: 2;
+    left: 0px;
+    right: 0px;
+    top: 0px;
+    bottom: 0px;
+    padding-top: 15px;
+    padding-right: 15px;
+    padding-bottom: 15px;
+    padding-left: 15px;
+    transition-duration: 0.4s, 0.4s, 0.4s;
+    transition-property: transform, opacity, visibility;
+  }
+  .lg-service-box:hover .lg-service-box-inner {
+    transform: translateY(-20%);
+  }
+  .lg-service-box-title {
+    margin-bottom: 15px;
+    position: absolute;
+    left: 20px;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  .lg-service-box-icon {
+    width: 54px;
+    height: 54px;
+    text-align: center;
+    line-height: 54px;
+    margin-top: auto;
+    margin-right: auto;
+    margin-left: auto;
+    border-top-left-radius: 100%;
+    border-top-right-radius: 100%;
+    border-bottom-right-radius: 100%;
+    border-bottom-left-radius: 100%;
+    background-image: none;
+    border-top-width: 1px;
+    border-right-width: 1px;
+    border-bottom-width: 1px;
+    border-left-width: 1px;
+    border-top-style: solid;
+    border-right-style: solid;
+    border-bottom-style: solid;
+    border-left-style: solid;
+    border-top-color: rgb(255, 255, 255);
+    border-right-color: rgb(255, 255, 255);
+    border-bottom-color: rgb(255, 255, 255);
+    border-left-color: rgb(255, 255, 255);
+    margin-bottom: 10px;
+    color: rgb(255, 255, 255);
+    transition-duration: 0.25s, 0.25s;
+    transition-property: color, background;
+  }
+  .lg-service-box-icon::after {
+    font-family: Flaticon;
+    font-size: 28px;
+    font-style: normal;
+    content: "";
+  }
+  h1, h2, h3, h4, h5, h6 {
+    color: inherit;
+    font-family: Ubuntu, sans-serif;
+    margin-top: 0px;
+    margin-right: 0px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+  }
+  .lg-service-box-title h3 {
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 18px;
+    line-height: 1.1;
+    text-align: center;
+  }
+  .lg-service-box-title h2, .lg-service-box-title h3 {
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 18px;
+    line-height: 1.1;
+    text-align: center;
+  }
+  .lg-service-box-content {
+    transform: translateY(40px);
+    visibility: hidden;
+    opacity: 0;
+    position: absolute;
+    left: 20px;
+    right: 20px;
+    -webkit-font-smoothing: antialiased;
+    transition-duration: 0.5s, 0.5s, 0.5s;
+    transition-property: transform, opacity, visibility;
+    top: 50%;
+    margin-top: 70px;
+  }
+  .lg-service-box:hover .lg-service-box-content {
+    transform: translateY(0px);
+    opacity: 1;
+    visibility: visible;
+    transition-duration: 0.5s, 0.5s, 0s;
+    transition-property: transform, opacity, visibility;
+    transition-delay: 0.1s;
+  }
+  .service-list p, .lg-service-box-content ul, .service-list ul {
+    padding-top: 0px;
+    padding-right: 0px;
+    padding-bottom: 0px;
+    padding-left: 0px;
+    margin-top: 0px;
+    margin-right: 0px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    list-style-type: none;
+  }
+  .lg-service-box-content ul {
+    left: 50%;
+    position: absolute;
+    transform: translateX(-50%);
+  }
+  .lg-service-box-content ul li {
+    padding-left: 13px;
+    position: relative;
+    white-space: nowrap;
+  }
+  .lg-service-box-content ul li::before {
+    border-top-width: 2px;
+    border-right-width: 2px;
+    border-bottom-width: 2px;
+    border-left-width: 2px;
+    border-top-style: solid;
+    border-right-style: solid;
+    border-bottom-style: solid;
+    border-left-style: solid;
+    border-top-color: rgb(255, 255, 255);
+    border-right-color: rgb(255, 255, 255);
+    border-bottom-color: rgb(255, 255, 255);
+    border-left-color: rgb(255, 255, 255);
+    background-image: none;
+
+  }
+  .lg-service-box-content ul li + li, .service-list ul li + li {
+    margin-top: 5px;
+  }
+  .lg-service-box.gd-box {
+    background-image: url("https://webnotize.com/images/services/graphic.jpg");
+  }
+  .lg-service-box-icon.gd-icon::after {
+    content: "";
+  }
+  p {
+   margin: 0px;
+  }
+  .lg-service-box-content p {
+    width: 100%;
+    margin-top: auto;
+    margin-right: auto;
+    margin-bottom: auto;
+    margin-left: auto;
+    max-width: 320px;
+  }
+  .lg-service-box.marketing-box {
+    background-image: url("https://webnotize.com/images/services/marketing.jpg");
+  }
+  .lg-service-box-icon.marketing-icon::after {
+    content: "";
+  }
+  .lg-service-box.mobile-box {
+    background-image: url("https://webnotize.com/images/services/mobile.jpg");
+  }
+  .lg-service-box-icon.mobile-icon::after {
+    content: "";
+  }
+  .lg-service-box.identity-box {
+    background-image: url("https://webnotize.com/images/services/identity.jpg");
+  }
+  .lg-service-box-icon.identity-icon::after {
+    content: "";
+  }
+  p + p {
+    margin-top: 20px;
+  }
+  .lg-service-box.seo-box {
+    background-image: url("https://webnotize.com/images/services/seo.jpg");
+  }
+  .lg-service-box-icon.seo-icon::after {
+    content: "";
+  }
